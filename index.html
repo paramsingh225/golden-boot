@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>European Golden Shoe | UCL Legends</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">UCL <span>LEGENDS</span> 🏆</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#history">Golden Shoe</a>
+    <a href="#leaderboard">Leaderboard</a>
+    <a href="#about">About</a>
+</nav>
+
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+    <p class="tagline">CELEBRATING FOOTBALL'S GREATEST GOALSCORERS</p>
+
+    <h1>
+        EUROPEAN
+        <span>GOLDEN SHOE</span>
+    </h1>
+
+    <p>
+        Explore the legendary goalscorers who dominated
+        European domestic football.
+    </p>
+
+    <a href="#history" class="hero-btn">EXPLORE WINNERS</a>
+
+</div>
+
+
+</section>
+
+<section class="stats">
+
+<div class="stat-box">
+    <h2 id="totalWinners">0</h2>
+    <p>Winning Seasons</p>
+</div>
+
+<div class="stat-box">
+    <h2>6</h2>
+    <p>Messi's Awards</p>
+</div>
+
+<div class="stat-box">
+    <h2>50</h2>
+    <p>Most Goals – Messi</p>
+</div>
+
+<div class="stat-box">
+    <h2>1968</h2>
+    <p>First Award</p>
+</div>
+
+
+</section>
+
+<section class="search-section" id="history">
+
+<h2>GOLDEN SHOE ARCHIVE</h2>
+
+<p>Search players, clubs or seasons.</p>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Messi, Ronaldo, Barcelona, 2012..."
+    >
+
+    <button onclick="searchWinners()">SEARCH</button>
+
+</div>
+
+<div class="filters">
+
+    <select id="yearFilter">
+        <option value="">All Seasons</option>
+    </select>
+
+    <button onclick="resetFilters()">RESET</button>
+
+</div>
+
+<div id="resultsCount"></div>
+
+<div class="table-container">
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>SEASON</th>
+                <th>WINNER</th>
+                <th>CLUB</th>
+                <th>LEAGUE</th>
+                <th>GOALS</th>
+            </tr>
+        </thead>
+
+        <tbody id="winnerTable"></tbody>
+
+    </table>
+
+</div>
+
+
+</section>
+
+<section class="leaderboard" id="leaderboard">
+
+<h2>ALL-TIME GOLDEN SHOE LEGENDS</h2>
+
+<p class="subtitle">
+    Players with the most European Golden Shoe awards.
+</p>
+
+<div id="leaderboardList"></div>
+
+
+</section>
+
+<section class="record-section">
+
+<h2>HISTORICAL RECORDS</h2>
+
+<div class="record-grid">
+
+    <div class="record-card">
+        <h3>👑 MOST AWARDS</h3>
+        <h2>Lionel Messi</h2>
+        <p>6 Golden Shoes</p>
+    </div>
+
+    <div class="record-card">
+        <h3>⚽ MOST GOALS</h3>
+        <h2>Lionel Messi</h2>
+        <p>50 Goals – 2011/12</p>
+    </div>
+
+    <div class="record-card">
+        <h3>🔥 SECOND MOST AWARDS</h3>
+        <h2>Cristiano Ronaldo</h2>
+        <p>4 Golden Shoes</p>
+    </div>
+
+    <div class="record-card">
+        <h3>🏆 LATEST WINNER</h3>
+        <h2>Harry Kane</h2>
+        <p>2025/26 – 36 Goals</p>
+    </div>
+
+</div>
+
+
+</section>
+
+<section class="about" id="about">
+
+<h2>ABOUT THE GOLDEN SHOE</h2>
+
+<p>
+    The European Golden Shoe is awarded to the leading
+    goalscorer in European domestic league football,
+    using a weighted points system.
+
+    Since 1996/97, goals scored in different leagues
+    have been assigned different points according to
+    league coefficients.
+
+    This archive celebrates the greatest goalscorers
+    in European football history.
+</p>
+
+
+</section>
+
+<footer>
+
+<h2>UCL LEGENDS 🏆</h2>
+
+<p>Celebrating the greatest players in football history.</p>
+
+<p>© 2026 UCL Legends | European Golden Shoe Archive</p>
+
+<p class="disclaimer">
+    Historical information is provided for educational purposes.
+</p>
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body> </html>
